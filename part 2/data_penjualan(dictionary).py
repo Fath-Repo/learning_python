@@ -11,11 +11,12 @@ total_terjual = 0
 
 # Input
 while loop_status:
-    barang = input("Nama barang: ")
+    barang = input("Nama barang: ").strip().lower()
     if barang in data_penjualan:
         while True:
             print("Nama barang sudah ada dalam data mohon ganti nama lain!")
-            barang = input("Nama barang: ")
+            barang = input("Nama barang: ").strip().lower()
+
 
             if barang not in data_penjualan:
                 break
